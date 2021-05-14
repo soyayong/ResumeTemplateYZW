@@ -52,11 +52,9 @@ function Contact() {
           </Col>
           <Col lg="6">
             {language.map((languages, index) => (
-              <div>
-                <h3 key={index}>
-                  {languages.title}
-                  <h6>{languages.detail}</h6>
-                </h3>
+              <div key={index}>
+                <h3>{languages.title}</h3>
+                <h6>{languages.detail}</h6>
                 <ProgressBar
                   striped
                   variant="success"

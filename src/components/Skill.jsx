@@ -25,9 +25,11 @@ function Skill() {
                     <h3
                       dangerouslySetInnerHTML={{ __html: skillCategory.name }}
                     />
-                    <ul class="list-group list-group-flush">
+                    <ul className="list-group list-group-flush">
                       {skillCategory.detail.map((detail, index) => (
-                        <li class="list-group-item">{detail.title}</li>
+                        <li key={index} className="list-group-item">
+                          {detail.title}
+                        </li>
                       ))}
                     </ul>
                   </CardContent>
